@@ -1,0 +1,22 @@
+{
+    "name": "autocar/laravel-flash",
+    "description": "Laravel Flash",
+    "license": "MIT",
+    "authors": [{
+        "name": "Selim Ertürk",
+        "email": "hizmetler@msn.com"
+    }],
+    "require": {
+        "php": ">=5.4.0",
+        "illuminate/support": "~5.0"
+    },
+    "autoload": {
+        "psr-0": {
+			"autocar\\LaravelFlash\\": "src/"
+        },
+        "files": [
+            "src/functions.php"
+        ]
+    },
+    "minimum-stability": "stable"
+}
