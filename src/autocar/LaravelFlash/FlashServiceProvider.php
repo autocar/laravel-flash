@@ -38,8 +38,8 @@ class FlashServiceProvider extends ServiceProvider
         $this->loadViewsFrom(__DIR__.'/resources/views', 'flash');
 
         $this->publishes([
-            __DIR__.'/../resources/views'  => base_path('resources/views/vendor/flash'),
-            __DIR__.'/../config/flash.php' => config_path('flash.php'),
+            __DIR__.'/resources/views'  => base_path('resources/views/vendor/flash'),
+            __DIR__.'/config/flash.php' => config_path('flash.php'),
         ]);
     }
 
