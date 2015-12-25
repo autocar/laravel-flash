@@ -23,8 +23,8 @@ class FlashServiceProvider extends ServiceProvider
             'autocar\LaravelFlash\Sessions\LaravelSessionStore'
         );
         $app = $this->app;
-        $app->singleton('flash', function () {
-			return new FlashNotifier();
+        $app->singleton('flash', function ($app) {
+			return new FlashNotifier($app['session']);
 		});
 		
         /*$this->app->singleton('flash', function () {
