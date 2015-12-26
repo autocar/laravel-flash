@@ -23,7 +23,7 @@ class FlashServiceProvider extends ServiceProvider
             'autocar\LaravelFlash\Sessions\LaravelSessionStore'
         );
 
-        $this->app->bindShared('flash', function () {
+        $this->app->singleton('flash', function () {
             return $this->app->make('autocar\LaravelFlash\FlashNotifier');
         });
     }
